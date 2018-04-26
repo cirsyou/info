@@ -24,14 +24,32 @@
       </div>
     </header>
     <div class="midbox">
-        <div class="title">这是path liu的开源项目</div>
-        <div>欢迎大家加入这个项目</div>
-        <div class="email">-- 可通过邮箱<a href="mailto:path2017@126.com">path2017@126.com</a>联系我</div>
-        <div class="date">2018/4/24</div>
+      <div class="title">这是path liu的开源项目</div>
+      <div>欢迎大家加入这个项目</div>
+      <div class="email">-- 可通过邮箱
+        <a href="mailto:path2017@126.com">path2017@126.com</a>联系我</div>
+      <div class="date">2018/4/24</div>
     </div>
     <footer class="footer">
-      &copy; 开源项目
+      &copy; An open source project.&nbsp;&nbsp;
+      <span id="footime"></span>
     </footer>
+    <script src="./indexpage/js/jquery-2.1.4.js"></script>
+    <script>
+      $(function () {
+        setInterval(function () {
+          var date = new Date()
+          var y = date.getFullYear()
+          var m = (date.getMonth() + 1)<10?('0'+(date.getMonth() + 1)):(date.getMonth() + 1)
+          var d = date.getDate()<10?('0'+date.getDate()):date.getDate()
+          var h = date.getHours()<10?('0'+date.getHours()):date.getHours()
+          var mm = date.getMinutes()<10?('0'+date.getMinutes()):date.getMinutes()
+          var s = date.getSeconds()<10?('0'+date.getSeconds()):date.getSeconds()
+          var newdate = y + '-' + m + '-' + d + ' ' + h + ':' + mm + ':' + s
+          $('#footime').html(newdate)
+        }, 1000)
+      })
+    </script>
   </div>
 </body>
 
