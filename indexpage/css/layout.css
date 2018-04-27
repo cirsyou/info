@@ -24,6 +24,12 @@
   color: #f7b52c;
 }
 
+.indexback {
+  background-color: #eff3fa;
+}
+.indexback .mt-2 {
+  margin-top: 20px;
+}
 .header {
   width: 100%;
   height: 44px;
