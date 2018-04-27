@@ -1,26 +1,47 @@
 @charset "utf-8";
-
 .wraper {
   width: 100%;
   min-width: 1200px;
   height: auto;
   background-color: #eff3fa;
 }
+
+.topbgc {
+  background: url(../images/indexbgc.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.topbgc h1,
+.topbgc p {
+  color: #fff;
+}
+
+.topbgc .mt-4 {
+  margin-top: 40px;
+}
+
+.topbgc p.link a {
+  color: #f7b52c;
+}
+
 .header {
   width: 100%;
   height: 44px;
   background-color: #1a2e5a;
 }
+
 .mid-content {
   width: 1000px;
   margin: 0 auto;
   height: 44px;
 }
+
 .menulist {
   float: left;
   letter-spacing: -1.5em;
   height: 44px;
 }
+
 .menulist li {
   display: inline-block;
   letter-spacing: normal;
@@ -32,22 +53,26 @@
   padding: 0 10px;
   cursor: pointer;
 }
+
 .menulist li a {
   display: block;
   width: 100%;
   height: 100%;
 }
+
 .menulist li:hover {
   color: #f7b52c;
   line-height: 42px;
   border-bottom: 2px solid #f7b52c;
 }
+
 .midbox {
   width: 1000px;
   margin: 0 auto;
   height: auto;
   min-height: 600px;
 }
+
 .footer {
   width: 100%;
   min-width: 1200px;
