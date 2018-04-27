@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>开源项目</title>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="./indexpage/css/normalize.css">
   <link rel="stylesheet" href="./indexpage/css/layout.css">
 </head>
@@ -16,7 +19,7 @@
       <div class="mid-content">
         <ul class="menulist">
           <li>首页</li>
-          <li>社区</li>
+          <li><a href="./community/index.html">社区</a></li>
           <li>项目库</li>
           <li>研究</li>
           <li>博文</li>
@@ -35,16 +38,19 @@
       <span id="footime"></span>
     </footer>
     <script src="./indexpage/js/jquery-2.1.4.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
     <script>
       $(function () {
         setInterval(function () {
           var date = new Date()
           var y = date.getFullYear()
-          var m = (date.getMonth() + 1)<10?('0'+(date.getMonth() + 1)):(date.getMonth() + 1)
-          var d = date.getDate()<10?('0'+date.getDate()):date.getDate()
-          var h = date.getHours()<10?('0'+date.getHours()):date.getHours()
-          var mm = date.getMinutes()<10?('0'+date.getMinutes()):date.getMinutes()
-          var s = date.getSeconds()<10?('0'+date.getSeconds()):date.getSeconds()
+          var m = (date.getMonth() + 1) < 10 ? ('0' + (date.getMonth() + 1)) : (date.getMonth() + 1)
+          var d = date.getDate() < 10 ? ('0' + date.getDate()) : date.getDate()
+          var h = date.getHours() < 10 ? ('0' + date.getHours()) : date.getHours()
+          var mm = date.getMinutes() < 10 ? ('0' + date.getMinutes()) : date.getMinutes()
+          var s = date.getSeconds() < 10 ? ('0' + date.getSeconds()) : date.getSeconds()
           var newdate = y + '-' + m + '-' + d + ' ' + h + ':' + mm + ':' + s
           $('#footime').html(newdate)
         }, 1000)
